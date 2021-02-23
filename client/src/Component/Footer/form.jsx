@@ -21,11 +21,11 @@ function Form() {
     axios
       .post("http://localhost:5000/api", state)
       .then((res) => {
-        toast.success("message send successfully");
+        toast.success(res.data.msg);
         console.log(res);
       })
       .catch((err) => {
-        toast.error("it look like an error occur");
+        toast.error(err.response.data.msg);
       });
     setstate({
       ...state,
