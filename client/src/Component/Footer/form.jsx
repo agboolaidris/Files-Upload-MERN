@@ -19,13 +19,13 @@ function Form() {
     e.preventDefault();
     console.log(state);
     axios
-      .post("http://localhost:5000/api", state)
+      .post("/api", state)
       .then((res) => {
-        toast.success(res.data.msg);
+        toast.success("message send successfully");
         console.log(res);
       })
       .catch((err) => {
-        toast.error(err.response.data.msg);
+        toast.error("it look like an error occur");
       });
     setstate({
       ...state,
