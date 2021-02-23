@@ -1,0 +1,53 @@
+nav {
+  position: absolute;
+  z-index: 5;
+  width: 30vw;
+  right: 0;
+  z-index: 10;
+
+  .harmburger {
+    z-index: 15;
+    position: absolute;
+    width: inherit;
+    height: 20vh;
+    display: flex;
+    padding-top: 10vh;
+    justify-content: center;
+  }
+  .menu {
+    padding-top: 20vh;
+    height: 100vh;
+    width: inherit;
+    display: flex;
+    position: absolute;
+    top: 0;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-500%);
+    transition: all 1.5s ease-out;
+    background: lighten($color: $secondary, $amount: 20);
+    z-index: 10;
+    border-radius: 50px;
+    padding-bottom: 4em;
+
+    a {
+      color: $neutral;
+      text-decoration: none;
+    }
+    a:hover {
+      border-bottom: 1px solid $primary;
+    }
+  }
+
+  .menu.menu-active {
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  nav {
+    width: 100vw;
+  }
+}

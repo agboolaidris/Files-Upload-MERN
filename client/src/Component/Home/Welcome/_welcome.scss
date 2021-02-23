@@ -1,0 +1,187 @@
+@mixin progress($percentage, $value) {
+  .bar {
+    width: $percentage;
+    height: 100%;
+    background: $secondary;
+    animation: width 3s ease-in-out;
+    animation-delay: 2s;
+    //animation-iteration-count: infinite;
+  }
+
+  @keyframes width {
+    0% {
+      width: 10%;
+    }
+
+    100% {
+      width: $percentage;
+    }
+  }
+  .bar::after {
+    content: $value;
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.wrapper {
+  margin-top: 1em;
+  .title {
+    margin-top: 1em;
+    text-align: center;
+  }
+  .underline {
+    height: 0.25rem;
+    width: 5rem;
+    background: lighten($color: $secondary, $amount: 20%);
+    margin: 0 auto;
+  }
+
+  .welcome {
+    padding: 2em 5% 0;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+
+    .div {
+      width: 70%;
+      min-width: 50%;
+      margin: 0 auto;
+      text-align: center;
+
+      .img-container {
+        margin: 1em auto;
+        width: 200px;
+        height: 200px;
+
+        img {
+          width: 100%;
+          border-radius: 50%;
+          box-shadow: 7px 10px $secondary;
+          border: 1px solid $secondary;
+        }
+      }
+      h3 {
+        margin: 1em 0;
+      }
+    }
+
+    .progressive {
+      max-width: 90%;
+      min-width: 70%;
+      margin: 0 auto;
+      .html {
+        @include progress(72%, "90%");
+      }
+      .css {
+        @include progress(72%, "90%");
+      }
+      .sass {
+        @include progress(56%, "70%");
+      }
+      .js {
+        @include progress(60%, "75%");
+      }
+      .react {
+        @include progress(60%, "75%");
+      }
+      .redux {
+        @include progress(64%, "80%");
+      }
+      .nodejs {
+        @include progress(48%, "60%");
+      }
+      .express {
+        @include progress(48%, "60%");
+      }
+      .mongodb {
+        @include progress(48%, "60%");
+      }
+      .figma {
+        @include progress(40%, "50%");
+      }
+      .prog {
+        position: relative;
+        width: 100%;
+        height: 25px;
+        background: darken($color: $neutral, $amount: 10);
+        display: flex;
+        margin-top: 0.5em;
+
+        .name {
+          width: 20%;
+          background: lighten($color: $secondary, $amount: 40);
+          text-align: center;
+          padding: 0.2em 0;
+          font-weight: bold;
+        }
+        .bar {
+          min-width: 10%;
+        }
+      }
+    }
+    .download {
+      grid-column: 1/4;
+      justify-items: center;
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          text-decoration: none;
+          margin-top: 1.5em;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: max-content;
+          transition: all 0.5s ease-in-out;
+          i {
+            margin-bottom: 0.3em;
+            margin-left: 2.5em;
+            color: $primary;
+            font-size: 1.5em;
+          }
+          span {
+            color: $secondary;
+            font-weight: bolder;
+          }
+        }
+        a:hover {
+          span {
+            color: $primary;
+          }
+          i {
+            color: $secondary;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .wrapper {
+    .welcome {
+      grid-template-columns: 100%;
+
+      .div {
+        width: 90%;
+      }
+      .progressive {
+        width: 90%;
+        margin-top: 1em;
+        .prog {
+          .name {
+            padding-top: 0.5em;
+            font-size: 11px;
+          }
+        }
+      }
+      .download {
+        grid-column: 1/2;
+      }
+    }
+  }
+}
