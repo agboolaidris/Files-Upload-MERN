@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { animateScroll } from "react-scroll";
+import { toast, ToastContainer } from "react-toastify";
 import axios from "axios";
 function Form() {
   const [state, setstate] = useState({
@@ -20,10 +21,11 @@ function Form() {
     axios
       .post("http://localhost:5000/api", state)
       .then((res) => {
+        toast.success("message send successfully");
         console.log(res);
       })
       .catch((err) => {
-        console.log(err.response);
+        toast.error("it look like an error occur");
       });
     setstate({
       ...state,
@@ -34,9 +36,9 @@ function Form() {
   };
   return (
     <div className="div">
-      <div class="title">
+      <div className="title">
         <h2>Contact</h2>
-        <div class="underline"></div>
+        <div className="underline"></div>
         <p>let work together</p>
       </div>
       <form onSubmit={handleSubmit}>
@@ -75,7 +77,7 @@ function Form() {
       </form>
 
       <a className="footer-logo" onClick={() => animateScroll.scrollToTop()}>
-        <i class="fas fa-angle-double-up fa-2x"></i>
+        <i className="fas fa-angle-double-up fa-2x"></i>
       </a>
     </div>
   );

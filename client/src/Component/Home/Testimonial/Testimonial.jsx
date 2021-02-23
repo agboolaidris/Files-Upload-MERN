@@ -97,14 +97,14 @@ function Testimonial() {
   }, []);
   return (
     <div className="test-wrapper" id="testimonial">
-      <div class="testimonial">
-        <div class="title">
+      <div className="testimonial">
+        <div className="title">
           <h2>Testimonial</h2>
-          <div class="underline"></div>
+          <div className="underline"></div>
         </div>
 
-        <article class="review">
-          <div class="img-containers">
+        <article className="review">
+          <div className="img-containers">
             <img src={Idris} id="person-img" alt="" />
           </div>
           <h4 id="author">Hammed Damme</h4>
@@ -115,16 +115,16 @@ function Testimonial() {
             Vero, distinctio!
           </p>
 
-          <div class="button-container">
-            <button class="prev-btn">
-              <i class="fas fa-chevron-left"></i>
+          <div className="button-container">
+            <button className="prev-btn">
+              <i className="fas fa-chevron-left"></i>
             </button>
-            <button class="next-btn">
-              <i class="fas fa-chevron-right"></i>
+            <button className="next-btn">
+              <i className="fas fa-chevron-right"></i>
             </button>
           </div>
 
-          <button class="random-btn">Random</button>
+          <button className="random-btn">Random</button>
         </article>
       </div>
     </div>

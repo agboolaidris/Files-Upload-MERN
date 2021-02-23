@@ -18,20 +18,20 @@ function Complete() {
     }
   }, []);
   return (
-    <div class="panels">
-      <div class="panel2 active">
+    <div className="panels">
+      <div className="panel2 active">
         <div>
           <h2>Blog website</h2>
           <a href="#">View project</a>
         </div>
       </div>
-      <div class="panel2">
+      <div className="panel2">
         <div>
           <h2>Online shopping </h2>
           <a href="#">View project</a>
         </div>
       </div>
-      <div class="panel2">
+      <div className="panel2">
         <div>
           <h2>Chat App</h2>
           <a href="#">View project</a>

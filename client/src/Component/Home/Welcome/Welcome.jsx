@@ -9,9 +9,9 @@ function Welcome() {
   }, []);
   return (
     <div className="wrapper" id="about">
-      <div class="title">
+      <div className="title">
         <h2>About</h2>
-        <div class="underline"></div>
+        <div className="underline"></div>
       </div>
       <div className="welcome">
         <div className="div" data-aos="fade-right">

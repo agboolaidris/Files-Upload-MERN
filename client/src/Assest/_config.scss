@@ -17,3 +17,12 @@ body {
 .App {
   background-color: $neutral;
 }
+
+//  .Toastify__toast {}
+.Toastify__toast--error {
+  background-color: $primary !important;
+}
+
+.Toastify__toast--success {
+  background-color: $primary !important;
+}

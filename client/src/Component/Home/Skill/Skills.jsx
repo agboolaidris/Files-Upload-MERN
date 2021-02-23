@@ -7,13 +7,13 @@ function Skills() {
     Aos.init({ duration: 3000 });
   }, []);
   return (
-    <div class="container">
+    <div className="container">
       <div>
-        <div class="card">
-          <div class="imgBx">
+        <div className="card">
+          <div className="imgBx">
             <i className="fas fa-code 5x"></i>
           </div>
-          <div class="contents">
+          <div className="contents">
             <span>front-end skill</span>
             <p>
               Writing well designed, efficient code by using best software
@@ -23,11 +23,11 @@ function Skills() {
         </div>
       </div>
       <div>
-        <div class="card">
-          <div class="imgBx">
+        <div className="card">
+          <div className="imgBx">
             <i className="fas fa-database"></i>
           </div>
-          <div class="contents">
+          <div className="contents">
             <span>Back-end skill</span>
             <p>
               Design and implementation of low-latency, high-availabilty, and
@@ -37,11 +37,11 @@ function Skills() {
         </div>
       </div>
       <div>
-        <div class="card">
-          <div class="imgBx">
+        <div className="card">
+          <div className="imgBx">
             <i className="fas fa-drafting-compass"></i>
           </div>
-          <div class="contents">
+          <div className="contents">
             <span>design skill</span>
             <p>
               Creative, analytical, and understand interaction design principles
@@ -50,11 +50,11 @@ function Skills() {
         </div>
       </div>
       <div>
-        <div class="card">
-          <div class="imgBx">
+        <div className="card">
+          <div className="imgBx">
             <i className="fas fa-handshake"></i>
           </div>
-          <div class="contents">
+          <div className="contents">
             <span>Soft skill</span>
             <p>
               Excellent communication and demonstrate good leadership, trust and

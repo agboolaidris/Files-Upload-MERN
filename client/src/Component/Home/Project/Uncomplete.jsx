@@ -18,14 +18,14 @@ function Uncomlete() {
     }
   }, []);
   return (
-    <div class="panels">
-      <div class="panel3 active">
+    <div className="panels">
+      <div className="panel3 active">
         <div>
           <h2>Instagram Clone</h2>
           <a href="#">View project</a>
         </div>
       </div>
-      <div class="panel3">
+      <div className="panel3">
         <div>
           <h2>Porfolio Website </h2>
           <a href="#">View project</a>
