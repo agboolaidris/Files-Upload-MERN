@@ -17,7 +17,6 @@ function Form() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(state);
     axios
       .post("/api", state)
       .then((res) => {
@@ -26,6 +25,7 @@ function Form() {
       })
       .catch((err) => {
         toast.error("it look like an error occur");
+        console.log(err.response);
       });
     setstate({
       ...state,

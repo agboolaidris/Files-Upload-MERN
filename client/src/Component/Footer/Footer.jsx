@@ -7,6 +7,7 @@ function Footer() {
   useEffect(() => {
     Aos.init({ duration: 3000 });
   }, []);
+
   return (
     <footer id="contact">
       <div className=" footer-1">
@@ -21,13 +22,11 @@ function Footer() {
             <a href="https://www.linkedin.com/in/idris-i-agboola-b24415190?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Be960e4be-281a-4927-b64b-8522911dc9fc">
               <i className="fab fa-linkedin-in fa-2x"></i>
             </a>
-            <a href="/">
-              <i className="fab fa-facebook-f fa-2x"></i>
-            </a>
-            <a href="/">
+
+            <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=agboolaisholaidreez@gmail.com">
               <i className="fab fa-google-plus-g fa-2x"></i>
             </a>
-            <a href="/">
+            <a href="https://twitter.com/Agboola_II">
               <i className="fab fa-twitter fa-2x"></i>
             </a>
           </div>

@@ -10,8 +10,10 @@ function Testimonial() {
         job: "Colleague",
         img:
           "https://images.unsplash.com/photo-1613922110510-502f37d20eb9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
-        text:
-          "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
+        text: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+          impedit magni, asperiores placeat maiores neque dolorem quaerat,
+          quasi nobis officiis tempore at tempora eos veniam illo? Incidunt,
+          vel! Laborum, assumenda.`,
       },
       {
         id: 2,
@@ -19,8 +21,10 @@ function Testimonial() {
         job: "UX/UI Designer",
         img:
           "https://images.unsplash.com/photo-1613876654199-92cfed5a07a8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=765&q=80",
-        text:
-          "Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.",
+        text: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+          impedit magni, asperiores placeat maiores neque dolorem quaerat,
+          quasi nobis officiis tempore at tempora eos veniam illo? Incidunt,
+          vel! Laborum, assumenda.`,
       },
       {
         id: 3,
@@ -28,8 +32,10 @@ function Testimonial() {
         job: "intern",
         img:
           "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
-        text:
-          "Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.",
+        text: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+          impedit magni, asperiores placeat maiores neque dolorem quaerat,
+          quasi nobis officiis tempore at tempora eos veniam illo? Incidunt,
+          vel! Laborum, assumenda.`,
       },
       {
         id: 4,
@@ -37,8 +43,10 @@ function Testimonial() {
         job: "Software Engineer",
         img:
           "https://images.unsplash.com/photo-1603775493298-e06a5f21e46c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
-        text:
-          "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
+        text: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+          impedit magni, asperiores placeat maiores neque dolorem quaerat,
+          quasi nobis officiis tempore at tempora eos veniam illo? Incidunt,
+          vel! Laborum, assumenda.`,
       },
     ];
 
@@ -107,12 +115,13 @@ function Testimonial() {
           <div className="img-containers">
             <img src={Idris} id="person-img" alt="" />
           </div>
-          <h4 id="author">Hammed Damme</h4>
-          <p id="job">Boss</p>
+          <h4 id="author">KKKKKKK</h4>
+          <p id="job">Mentor</p>
           <p id="info">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate
-            quasi id fugit esse distinctio reiciendis officia vero consequatur.
-            Vero, distinctio!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            impedit magni, asperiores placeat maiores neque dolorem quaerat,
+            quasi nobis officiis tempore at tempora eos veniam illo? Incidunt,
+            vel! Laborum, assumenda.
           </p>
 
           <div className="button-container">

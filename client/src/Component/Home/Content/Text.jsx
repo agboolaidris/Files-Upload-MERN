@@ -7,7 +7,7 @@ function Text() {
 
     const textArray = [
       "Hi, I'm Idris Agboola",
-      "A creative javascript full-stack engineer ",
+      "A creative javascript full-stack developer ",
     ];
     const typingDelay = 200;
     const erasingDelay = 100;

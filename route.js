@@ -1,29 +1,27 @@
 const Route = require("express").Router();
 const nodemailer = require("nodemailer");
+const mailgun = require("nodemailer-mailgun-transport");
 //send mail
 const SendMail = (message) => {
-  const Tranporter = nodemailer.createTransport({
-    service: process.env.EMAIL_SERVICE,
+  const Auth = {
     auth: {
-      user: process.env.EMAIL_USERNAME,
-      pass: process.env.EMAIL_PASSWORD,
+      api_key: process.env.MAILGUN_APIKEY,
+      domain: process.env.MAILGUN_DOMAIN,
     },
-  });
+  };
+  const Tranporter = nodemailer.createTransport(mailgun(Auth));
 
   const mailOptions = {
-    from: process.env.EMAIL_FROM,
+    from: "Excited User <me@samples.mailgun.org>",
     to: process.env.EMAIL_TO,
     subject: "MESSAGE FROM PORTFOLIO",
     html: message,
   };
 
-  Tranporter.sendMail(mailOptions, (err, info) => {
-    if (err) {
-      console.log(err);
-    } else {
-      console.log("mail sent!!!!!!!!!");
-    }
-  });
+  const response = Tranporter.sendMail(mailOptions);
+
+  console.log(response);
+  return response;
 };
 
 Route.post("/", async (req, res) => {
@@ -34,8 +32,10 @@ Route.post("/", async (req, res) => {
        <p>${message}</>
        <P>you can response via ${email}</>
       `;
-    await SendMail(msg);
-
+    const response = await SendMail(msg);
+    if (!response) {
+      return res.status(401).json({ msg: "error occur" });
+    }
     res.json({ msg: "message send successful" });
   } catch (error) {
     console.log(error.message);
