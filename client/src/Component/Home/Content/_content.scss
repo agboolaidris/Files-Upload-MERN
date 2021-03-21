@@ -2,68 +2,70 @@
   padding: 0 5%;
   height: 100vh;
   width: 100%;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   background-image: url("../../../imgs/bg.svg");
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
   color: $neutral;
-
-  .arrow {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 0.5em 1em;
-    z-index: 5;
-
-    i {
-      animation: font 2s ease-out;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 100%, 75% 90%, 0 100%, 0 0);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  & > div {
+    margin-left: 50%;
+    font-size: 3rem;
+    color: $neutral;
+    .name-text {
       color: $neutral;
-      font-size: 70px;
-      animation-iteration-count: infinite;
     }
+    .arrow {
+      position: absolute;
+      top: 70%;
+      left: 70%;
+      transform: translateX(-10%);
+      padding: 0.5em 1em;
+      z-index: 5;
 
-    i:hover {
-      color: $primary;
-    }
-
-    @keyframes font {
-      from {
-        opacity: 0.3;
+      i {
+        animation: font 2s ease-out;
+        color: $neutral;
+        font-size: 70px;
+        animation-iteration-count: infinite;
       }
-      to {
-        opacity: 1;
-      }
-    }
-  }
 
-  .text {
-    p {
-      font-size: 3rem;
-      padding: 0.5rem;
-      font-weight: bold;
-      letter-spacing: 0.1rem;
-      text-align: center;
-      overflow: hidden;
-
-      .typed-text {
-        font-size: 50px;
+      i:hover {
         color: $primary;
-        font-weight: bold;
       }
 
-      .cursor {
-        display: inline-block;
-        background-color: #ccc;
-        margin-left: 0.1rem;
-        width: 3px;
-        animation: blink 1s infinite;
-        .typing {
-          animation: none;
+      @keyframes font {
+        from {
+          opacity: 0.3;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    }
+
+    .text {
+      p {
+        text-align: center;
+        overflow: hidden;
+        color: $neutral;
+        .typed-text {
+          color: $primary;
+          font-weight: bold;
+        }
+
+        .cursor {
+          display: inline-block;
+          background-color: #ccc;
+          margin-left: 0.1rem;
+          width: 3px;
+          animation: blink 1s infinite;
+          .typing {
+            animation: none;
+          }
         }
       }
     }
@@ -73,6 +75,11 @@
 @media only screen and (max-width: 700px) {
   .content {
     background-image: url(../../../imgs/tablet.svg);
+
+    & > div {
+      margin-left: 0;
+      font-size: 2em;
+    }
   }
 }
 

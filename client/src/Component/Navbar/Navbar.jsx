@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Menu from "../../imgs/harmburger.svg";
+import Menu from "../../imgs/bar.svg";
 import Multiply from "../../imgs/multiply.png";
 import Items from "./Items";
 

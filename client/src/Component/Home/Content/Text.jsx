@@ -6,8 +6,9 @@ function Text() {
     const cursorSpan = document.querySelector(".cursor");
 
     const textArray = [
-      "Hi, I'm Idris Agboola",
-      "A creative javascript full-stack developer ",
+      "Software Developer",
+      "Javascript Developer ",
+      "Problem Solver",
     ];
     const typingDelay = 200;
     const erasingDelay = 100;
