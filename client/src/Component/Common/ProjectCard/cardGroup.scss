@@ -1,0 +1,42 @@
+/* structure css code */
+
+.card-group {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  margin: 0 auto 0;
+  text-align: center;
+  color: $secondary;
+  font-size: 45px;
+  line-height: 300px;
+  cursor: pointer;
+}
+
+.card-group .front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  background-position: center;
+  backface-visibility: hidden;
+  transform: perspective(600px) rotateY(0deg);
+  transition: transform 0.55s linear;
+}
+
+.card-group .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #bd1036;
+  backface-visibility: hidden;
+  transform: perspective(600px) rotateY(180deg);
+  transition: transform 0.55s linear;
+}
+
+.card-group:hover .front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.card-group:hover .back {
+  transform: perspective(600px) rotateY(0deg);
+}

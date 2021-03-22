@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import idris from "../../../imgs/idris.png";
+import idris from "../../imgs/idris.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Progress from "./Progress";

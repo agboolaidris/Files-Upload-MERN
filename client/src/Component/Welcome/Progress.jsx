@@ -1,5 +1,5 @@
 import React from "react";
-import ProgressiveBarGroup from "../../Common/ProgressBar/progressiveBarGroup";
+import ProgressiveBarGroup from "../Common/ProgressBar/progressiveBarGroup";
 
 function Progress({ percentage = 20 }) {
   return (
