@@ -8,7 +8,7 @@ function Navbar() {
   const [items, setitems] = useState(false);
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 680) {
+    if (window.scrollY > 660) {
       setitems(true);
     } else {
       setitems(false);
