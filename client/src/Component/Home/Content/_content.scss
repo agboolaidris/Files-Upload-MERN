@@ -26,22 +26,23 @@
       padding: 0.5em 1em;
       z-index: 5;
 
-      i {
+      img {
         animation: font 2s ease-out;
         color: $neutral;
         font-size: 70px;
         animation-iteration-count: infinite;
       }
 
-      i:hover {
+      img:hover {
         color: $primary;
       }
 
       @keyframes font {
         from {
-          opacity: 0.3;
+          margin-top: 0.5em;
         }
         to {
+          margin-top: 0.3em;
           opacity: 1;
         }
       }
@@ -59,8 +60,7 @@
 
         .cursor {
           display: inline-block;
-          background-color: #ccc;
-          margin-left: 0.1rem;
+          background-color: #cccccc;
           width: 3px;
           animation: blink 1s infinite;
           .typing {
