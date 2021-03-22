@@ -1,5 +1,7 @@
 #project {
-  padding: 2em 5% 4em;
+  padding: 4em 5% 4em;
+  background-color: darken($color: $neutral, $amount: 20%);
+
   .project {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
