@@ -16,12 +16,10 @@ function Navbar() {
   });
 
   const handleClick = () => {
-    if (items) {
-      setitems(false);
-      setharmburger(true);
-    } else {
+    if (harmburger) {
       setharmburger(false);
-      setitems(true);
+    } else {
+      setharmburger(true);
     }
   };
   return (

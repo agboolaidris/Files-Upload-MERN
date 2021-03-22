@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap");
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -23,3 +24,6 @@ body {
 @import "./Component/Home/Welcome/welcome";
 @import "./Assest/btn";
 @import "./Component/Navbar/nav";
+
+//common
+@import "./Component/Common/ProgressBar/progressiveBarGroup.scss";
