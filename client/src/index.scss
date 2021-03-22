@@ -16,14 +16,14 @@ body {
 
 @import "./Assest/config";
 @import "./Component/Footer/footer";
-
-@import "./Component/Home/Content/_content.scss";
-@import "./Component/Home/Project/project";
-@import "./Component/Home/Skill/skill";
-@import "./Component/Home/Testimonial/testimonial";
-@import "./Component/Home/Welcome/welcome";
-@import "./Assest/btn";
 @import "./Component/Navbar/nav";
+
+@import "./Component/Content/content";
+@import "./Component/Welcome/welcome";
+@import "./Component/Skill/skill";
+
+@import "./Component/Project/project";
+@import "./Assest/btn";
 
 //common
 @import "./Component/Common/ProgressBar/progressiveBarGroup.scss";

@@ -1,7 +1,7 @@
 import React from "react";
 import { animateScroll, Link } from "react-scroll";
 import Text from "./Text";
-import arrow from "../../../imgs/arrowdown.svg";
+import arrow from "../../imgs/arrowdown.svg";
 
 function Content() {
   return (

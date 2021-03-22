@@ -2,7 +2,7 @@
   padding: 0 5%;
   height: 100vh;
   width: 100%;
-  background-image: url("../../../imgs/bg.svg");
+  background-image: url("../../imgs/bg.svg");
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -74,7 +74,7 @@
 
 @media only screen and (max-width: 700px) {
   .content {
-    background-image: url(../../../imgs/tablet.svg);
+    background-image: url(../../imgs/tablet.svg);
 
     & > div {
       margin-left: 0;
