@@ -8,7 +8,7 @@ function Skills() {
   }, []);
   return (
     <div className="container">
-      <div>
+      <div data-aos="flip-down">
         <div className="card">
           <div className="imgBx">
             <i className="fas fa-code 5x"></i>
@@ -22,7 +22,7 @@ function Skills() {
           </div>
         </div>
       </div>
-      <div>
+      <div data-aos="flip-down">
         <div className="card">
           <div className="imgBx">
             <i className="fas fa-database"></i>
@@ -36,7 +36,7 @@ function Skills() {
           </div>
         </div>
       </div>
-      <div>
+      <div data-aos="flip-down">
         <div className="card">
           <div className="imgBx">
             <i className="fas fa-drafting-compass"></i>
@@ -49,7 +49,7 @@ function Skills() {
           </div>
         </div>
       </div>
-      <div>
+      <div data-aos="flip-down">
         <div className="card">
           <div className="imgBx">
             <i className="fas fa-handshake"></i>

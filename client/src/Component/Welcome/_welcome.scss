@@ -24,6 +24,7 @@
       min-width: 50%;
       margin: 0 auto;
       text-align: center;
+      line-height: 1.2em;
 
       .img-container {
         margin: 1em auto;
@@ -39,6 +40,9 @@
       }
       h3 {
         margin: 1em 0;
+      }
+      p {
+        text-align: left;
       }
     }
 

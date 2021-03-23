@@ -1,11 +1,12 @@
 import React from "react";
 import ProgressiveBarGroup from "../Common/ProgressBar/progressiveBarGroup";
 
-function Progress({ percentage = 20 }) {
+function Progress() {
   return (
     <>
       <ProgressiveBarGroup name="HTML" percent={90} />
       <ProgressiveBarGroup name="CSS" percent={90} />
+      <ProgressiveBarGroup name="SASS" percent={70} />
       <ProgressiveBarGroup name="Javascript" percent={75} />
       <ProgressiveBarGroup name="React" percent={65} />
       <ProgressiveBarGroup name="Redux" percent={65} />

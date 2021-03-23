@@ -1,8 +1,12 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 function CardGroup({ project }) {
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
   return (
-    <div class="card-group">
+    <div class="card-group" data-aos="flip-up">
       <div
         class="front"
         style={{ backgroundImage: `url(${project.imageURL})` }}
