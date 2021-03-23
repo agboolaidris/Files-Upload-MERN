@@ -16,8 +16,8 @@ function Content() {
           </Link>
         </div>
       </div>
-      <div class="area">
-        <ul class="circles">
+      <div className="area">
+        <ul className="circles">
           <li>
             <img src={idris} alt="idris" />
           </li>

@@ -6,14 +6,14 @@ function CardGroup({ project }) {
     Aos.init({ duration: 3000 });
   }, []);
   return (
-    <div class="card-group" data-aos="flip-up">
+    <div className="card-group" data-aos="flip-up">
       <div
-        class="front"
+        className="front"
         style={{ backgroundImage: `url(${project.imageURL})` }}
       >
         {project.name}
       </div>
-      <div class="back">
+      <div className="back">
         <div className="project-title">{project.name}</div>
         <div className="technology">{project.technology}</div>
         <p>{project.description}</p>
@@ -22,7 +22,7 @@ function CardGroup({ project }) {
             <i className="fab fa-github"></i>
           </a>
           <a href={project.websiteURL}>
-            <i class="fas fa-globe"></i>
+            <i className="fas fa-globe"></i>
           </a>
         </div>
       </div>
