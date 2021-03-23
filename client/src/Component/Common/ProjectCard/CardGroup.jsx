@@ -10,7 +10,7 @@ function CardGroup({ project }) {
         {project.name}
       </div>
       <div class="back">
-        <div className="title">{project.name}</div>
+        <div className="project-title">{project.name}</div>
         <div className="technology">{project.technology}</div>
         <p>{project.description}</p>
         <div className="icon">
