@@ -2,11 +2,12 @@ import React from "react";
 import { animateScroll, Link } from "react-scroll";
 import Text from "./Text";
 import arrow from "../../imgs/arrowdown.svg";
+import idris from "../../imgs/idris.png";
 
 function Content() {
   return (
     <div className=" content" id="home">
-      <div>
+      <div className="context">
         <p className="name-text">Hello, I'm Idris</p>
         <Text />
         <div>
@@ -14,6 +15,40 @@ function Content() {
             <img src={arrow} alt="" />
           </Link>
         </div>
+      </div>
+      <div class="area">
+        <ul class="circles">
+          <li>
+            <img src={idris} alt="idris" />
+          </li>
+          <li>
+            <img src={idris} alt="idris" />
+          </li>
+          <li>
+            <img src={idris} alt="idris" />
+          </li>
+          <li>
+            <img src={idris} alt="idris" />
+          </li>
+          <li>
+            <img src={idris} alt="idris" />
+          </li>
+          <li>
+            <img src={idris} alt="idris" />
+          </li>
+          <li>
+            <img src={idris} alt="idris" />
+          </li>
+          <li>
+            <img src={idris} alt="idris" />
+          </li>
+          <li>
+            <img src={idris} alt="idris" />
+          </li>
+          <li>
+            <img src={idris} alt="idris" />
+          </li>
+        </ul>
       </div>
     </div>
   );
