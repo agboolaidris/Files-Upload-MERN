@@ -1,6 +1,33 @@
 #project {
-  padding: 4em 5% 4em;
-  background-color: darken($color: $neutral, $amount: 20%);
+  clip-path: polygon(
+    0 0,
+    35% 11%,
+    35% 0%,
+    65% 0%,
+    65% 11%,
+    100% 0,
+    100% 57%,
+    100% 100%,
+    65% 100%,
+    35% 100%,
+    0 100%,
+    0 42%
+  );
+  padding: 6em 5%;
+  background-color: darken($color: $neutral, $amount: 3%);
+  .title {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    color: $secondary;
+    .underline {
+      height: 0.25rem;
+      width: 5rem;
+      background: $secondary;
+      margin: 0.3em auto;
+      border-radius: 5px;
+    }
+  }
 
   .project {
     display: grid;
@@ -10,7 +37,21 @@
 
 @media only screen and (max-width: 700px) {
   #project {
-    padding: 0 5%;
+    padding: 8em 5% 6em;
+    clip-path: polygon(
+      0 0,
+      35% 11%,
+      35% 0%,
+      65% 0%,
+      65% 11%,
+      100% 0,
+      100% 57%,
+      100% 100%,
+      65% 100%,
+      35% 100%,
+      0 100%,
+      0 42%
+    );
     .project {
       display: grid;
       grid-template-columns: 100%;

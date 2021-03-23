@@ -1,111 +1,66 @@
 footer {
   background: $secondary;
-  padding: 0 5%;
-  .footer-1 {
-    background: lighten($color: $secondary, $amount: 20);
-    //  background: $primary;
-    display: flex;
-    justify-content: center;
-
-    .div {
-      width: 40%;
-      .title {
-        text-align: center;
-        margin-bottom: 2rem;
-        color: $neutral;
-      }
-      .underline {
-        height: 0.25rem;
-        width: 5rem;
-        background: $neutral;
-        margin: 0 auto;
-      }
-      form {
-        width: 100%;
-        div {
-          width: 100%;
-          input {
-            width: 100%;
-            height: 40px;
-            padding: 0.5em;
-            font-size: 15px;
-            color: $neutral;
-            border: 1px solid gray;
-            outline: none;
-            background: $secondary;
-          }
-          input:hover,
-          textarea:hover {
-            background: lighten($color: $secondary, $amount: 10);
-          }
-          textarea {
-            height: 70px;
-            font-size: 15px;
-            width: 100%;
-            color: $neutral;
-            outline: none;
-            padding: 0.5em;
-            background: $secondary;
-          }
-        }
-        .btn {
-          text-align: right;
-        }
-        button {
-          padding: 0.5em 1.5em;
-          margin-left: 50px;
-          background: none;
-          border: 1px solid $neutral;
-          color: $neutral;
-          font-size: 20px;
-          margin: 0.3em 0 0;
-          transition: all 0.5sec ease-out;
-        }
-        button:hover {
-          background: $primary;
-        }
-      }
-      .footer-logo {
-        font-size: 15px;
-        color: $primary;
-
-        display: block;
-        margin-top: 1em;
-        i {
-          margin: 0 50%;
-          transform: translateX(-50%);
-          background: $primary;
-          padding: 0.5em;
-          margin-bottom: -200%;
-          color: $secondary;
-        }
-        i:hover {
-          background: darken($color: $neutral, $amount: 10);
-        }
-      }
+  clip-path: polygon(
+    0 0,
+    35% 11%,
+    35% 0%,
+    65% 0%,
+    65% 11%,
+    100% 0,
+    100% 57%,
+    100% 100%,
+    65% 100%,
+    35% 100%,
+    0 100%,
+    0 42%
+  );
+  color: $neutral;
+  .title {
+    margin-top: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    color: $neutral;
+    .underline {
+      height: 0.25rem;
+      width: 5rem;
+      background: $neutral;
+      margin: 0.3em auto;
+      border-radius: 5px;
     }
+  }
+  background-color: lighten($color: $secondary, $amount: 20);
+
+  .footer-1 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+
+    padding: 0 5%;
   }
 
   .footer-2 {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     position: relative;
     padding: 2em 0;
+    background-color: $secondary;
+    text-align: center;
+    span {
+      color: $primary;
+    }
 
     .social-media {
       width: 100%;
       padding-bottom: 20px;
       display: flex;
-      justify-content: space-around;
-      border-bottom: 2px solid $primary;
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px;
+      justify-content: center;
+
       a {
         color: $neutral;
         background: lighten($color: $secondary, $amount: 10);
         padding: 0.5em;
         text-align: center;
         width: 50px;
+        margin: 0 1em;
       }
       a:hover {
         background: $primary;

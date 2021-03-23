@@ -10,8 +10,24 @@ function Footer() {
 
   return (
     <footer id="contact">
+      <div className="title">
+        <h2>Contact</h2>
+        <div className="underline"></div>
+      </div>
       <div className=" footer-1">
         <Form />
+        <div>
+          <div className="Phone">
+            <p>Phone</p>
+            <span>+2348137088555</span>
+          </div>
+          <div className="Email">
+            <p>agboolaisholaidreez@gmail.com</p>
+          </div>
+          <div className="Address">
+            <p>Lagos Island,Lagos,Nigeria.</p>
+          </div>
+        </div>
       </div>
       <div className=" footer-2">
         <div className="div2">
@@ -30,6 +46,7 @@ function Footer() {
               <i className="fab fa-twitter fa-2x"></i>
             </a>
           </div>
+          <span>IDRIS AGBOOLA ©2021</span>
         </div>
       </div>
     </footer>

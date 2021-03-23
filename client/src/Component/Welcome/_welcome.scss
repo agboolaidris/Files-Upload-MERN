@@ -3,12 +3,15 @@
   .title {
     margin-top: 1em;
     text-align: center;
-  }
-  .underline {
-    height: 0.25rem;
-    width: 5rem;
-    background: lighten($color: $secondary, $amount: 20%);
-    margin: 0 auto;
+    font-size: 1.5em;
+    color: $secondary;
+    .underline {
+      height: 0.25rem;
+      width: 5rem;
+      background: $secondary;
+      margin: 0.3em auto;
+      border-radius: 5px;
+    }
   }
 
   .welcome {

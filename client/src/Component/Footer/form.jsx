@@ -36,11 +36,6 @@ function Form() {
   };
   return (
     <div className="div">
-      <div className="title">
-        <h2>Contact</h2>
-        <div className="underline"></div>
-        <p>let work together</p>
-      </div>
       <form onSubmit={handleSubmit}>
         <div>
           <input
