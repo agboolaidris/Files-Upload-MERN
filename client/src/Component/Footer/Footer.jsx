@@ -22,10 +22,12 @@ function Footer() {
             <span>+2348137088555</span>
           </div>
           <div className="Email">
-            <p>agboolaisholaidreez@gmail.com</p>
+            <p>Email</p>
+            <span>agboolaisholaidreez@gmail.com</span>
           </div>
           <div className="Address">
-            <p>Lagos Island,Lagos,Nigeria.</p>
+            <p>Address</p>
+            <span>Lagos Island,Lagos,Nigeria.</span>
           </div>
         </div>
       </div>
