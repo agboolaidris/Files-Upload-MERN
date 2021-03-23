@@ -53,17 +53,20 @@ function Items({ harmburger, handleClick }) {
       </ul>
       <ul className="social">
         <li>
-          <a onClick={handleClick} href="#">
+          <a onClick={handleClick} href="https://github.com/agboolaidris">
             <i className="fab fa-github"></i>
           </a>
         </li>
         <li>
-          <a onClick={handleClick} href="#">
+          <a
+            onClick={handleClick}
+            href="https://www.linkedin.com/in/idris-i-agboola-b24415190?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Be960e4be-281a-4927-b64b-8522911dc9fc"
+          >
             <i className="fab fa-linkedin-in"></i>
           </a>
         </li>
         <li>
-          <a onClick={handleClick} href="#">
+          <a onClick={handleClick} href="https://twitter.com/Agboola_II">
             <i className="fab fa-twitter"></i>
           </a>
         </li>

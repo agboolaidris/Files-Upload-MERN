@@ -11,7 +11,7 @@ function Project() {
     {
       id: "1",
       name: "Linkedin Clone",
-      githubRepoURL: "",
+      githubRepoURL: "https://github.com/agboolaidris/Linkedin-Clone",
       websiteURL: "",
       technology: "React/Redux/Express/Mongodb",
       description: "Clone of linkedin web Application",
@@ -21,7 +21,8 @@ function Project() {
     {
       id: "2",
       name: "E-commerce",
-      githubRepoURL: "",
+      technology: "React/Redux/Express/Mongodb",
+      githubRepoURL: "https://github.com/agboolaidris/E-commerce",
       imageURL:
         "https://res.cloudinary.com/practicaldev/image/fetch/s--sxby4dcG--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/kcv0c0itp9fv0hbafo3y.jpg",
     },
