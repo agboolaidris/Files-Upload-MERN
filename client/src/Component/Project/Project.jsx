@@ -1,9 +1,6 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import All from "./All";
-import Complete from "./Complete";
-import Uncomlete from "./Uncomplete";
 import CardGroup from "../Common/ProjectCard/CardGroup";
 
 function Project() {

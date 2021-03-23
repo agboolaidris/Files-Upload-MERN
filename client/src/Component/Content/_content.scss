@@ -64,7 +64,7 @@
     background-image: radial-gradient(
       circle farthest-corner at 16.5% 28.1%,
       $secondary 0%,
-      rgb(14, 44, 71) 90%
+      $blue 90%
     );
     width: 100%;
     height: 100vh;
@@ -85,7 +85,7 @@
     list-style: none;
     width: 20px;
     height: 20px;
-    background: $primary;
+    background: $blue;
     background-position: center;
     animation: animate 25s linear infinite;
     bottom: -150px;
