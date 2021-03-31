@@ -1,11 +1,12 @@
 import React from "react";
 
-function upload({ handleChange, handleSubmit, state }) {
+function Upload({ handleChange, handleSubmit, state }) {
   return (
     <form onSubmit={handleSubmit}>
       <div>
         <input
           type="text"
+          name="name"
           value={state.name}
           required
           onChange={handleChange}
@@ -24,4 +25,4 @@ function upload({ handleChange, handleSubmit, state }) {
   );
 }
 
-export default upload;
+export default Upload;

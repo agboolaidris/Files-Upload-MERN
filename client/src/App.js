@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./layout/header/header";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import UploadContainer from "./container/upload";
 import "./App.scss";
 
 function App() {
@@ -8,6 +9,9 @@ function App() {
     <>
       <BrowserRouter>
         <Header />
+        <Switch>
+          <Route path="/" exact component={UploadContainer} />
+        </Switch>
       </BrowserRouter>
     </>
   );
