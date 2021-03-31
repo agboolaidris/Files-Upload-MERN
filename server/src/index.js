@@ -16,6 +16,8 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use("/upload", express.static(path.join(__dirname, "upload")));
 
+app.use("/api", require("./routes/upload"));
+
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}!`);
 });
