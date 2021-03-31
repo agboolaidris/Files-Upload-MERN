@@ -4,7 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 //require database
-require("./mongose/mongose");
+require("./mongose/mongose")();
 
 //cors config
 app.use(cors());
