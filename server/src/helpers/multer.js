@@ -1,7 +1,7 @@
 const multer = require("multer");
 const shortid = require("shortid");
 const path = require("path");
-
+console.log(__dirname);
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, path.join(__dirname, "uploads"));
